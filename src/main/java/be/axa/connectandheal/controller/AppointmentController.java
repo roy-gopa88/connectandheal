@@ -20,14 +20,14 @@ public class AppointmentController {
 	@Autowired
     private AppointmentDao appointmentDao;
      
-    @GetMapping(path="/appointments", produces = "application/json")
+    @GetMapping(path="/getAppointments", produces = "application/json")
     public Appointments getAppointments() 
     {
     	System.out.println("getAppointments");
         return appointmentDao.getAllAppointments();
     }
      
-    @PostMapping(path= "/appointments", consumes = "application/json", produces = "application/json")
+    @PostMapping(path= "/saveAppointment", consumes = "application/json", produces = "application/json")
     public ResponseEntity<Object> addAppointment(@RequestBody Appointment appointment) 
     {
     	System.out.println("addAppointment");

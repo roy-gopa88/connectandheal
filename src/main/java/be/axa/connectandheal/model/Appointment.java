@@ -11,7 +11,12 @@ public class Appointment {
 	private String dateTime;
 	private String summary;
 	
+	public Appointment(){
+		
+	}
+	
 	public Appointment(int doctorId, int userId, String userEmail, String dateTime, String summary) {
+		super();
 		this.doctorId = doctorId;
 		this.userId = userId;
 		this.userEmail = userEmail;

@@ -11,9 +11,9 @@ public class AppointmentDao {
     
     static
     {
-        list.getAppointmentList().add(new Appointment(1, 0, "groy@gmail.com", "12-Dec-2020", "Dentist"));
-        list.getAppointmentList().add(new Appointment(2, 0, "abc@gmail.com", "11-Dec-2020", "Physician"));
-        list.getAppointmentList().add(new Appointment(3, 0, "ss@gmail.com", "10-Dec-2020", "Dietician"));
+        list.getAppointmentList().add(new Appointment(1, 111, "groy@gmail.com", "12-Dec-2020", "Dentist"));
+        list.getAppointmentList().add(new Appointment(2, 222, "abc@gmail.com", "11-Dec-2020", "Physician"));
+        list.getAppointmentList().add(new Appointment(3, 333, "ss@gmail.com", "10-Dec-2020", "Dietician"));
     }
      
     public Appointments getAllAppointments() 
