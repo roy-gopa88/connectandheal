@@ -16,10 +16,10 @@ public class PractitionerController {
     private PractitionerDao practitionerDao;
      
     @GetMapping(path="/getPractitioner", produces = "application/json")
-    public List<Doctor> getPractitioner(String latitude, String longitude, String radius, String specialization) 
+    public List<Doctor> getPractitioner(String latitude, String longitude, String radius, String keyword) 
     {
     	System.out.println("getPractitioner");
-        return practitionerDao.getPractitioner( latitude,  longitude,  radius,  specialization);
+        return practitionerDao.getPractitioner( latitude,  longitude,  radius,  keyword);
     }
      
 }

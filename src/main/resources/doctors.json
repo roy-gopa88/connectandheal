@@ -1,5 +1,9 @@
 [
     {
+        "latitude":"23",
+        "longitude":"25",
+        "keyword":"doctor",
+        "radius":"100",
         "id": "111",
         "firstName": "AAA",
         "lastName": "BBB",
